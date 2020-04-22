@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+/* Q1 */
+
+var i=0, x=0, y;
+
+var num =Math.floor( prompt("Enter your number: "));
+console.log(num); //5684
+
+function reverse (num) {
+
+for (i=0; i<num; i++)
+    {
+    x=num; //5684
+    y=num; //5684
+    y=y/10; //568
+    x=x%10; //4
+    console.log(parseInt(x));
+    num=y;
+    }
+
+}
+
+reverse(num);        
+
+
+/* Q2 */
+
+var number = prompt ("Enter your number :");
+var j;
+var sqrt = number;
+sqrt = Math.sqrt (number);
+
+function prime (number) {
+var flag=true;
+for (j=2; j<=sqrt; j++)
+    {
+
+        if (number % j === 0)
+        {
+            flag= false;
+            break;
+        }
+
+    }
+        if (flag) {
+            console.log("prime");
+        }
+        else {
+            console.log("not prime");
+        }
+}
+
+prime(number);
+
+
+/* Q3 */
+
+function typeOfArgument (argument)
+{
+return typeof(argument);
+}        
+
+console.log(typeOfArgument (true));
+
+
+/* Q4 */
+
+var coin = 100;
+function dollarToShekel(coin) {
+    var shekel=coin*3.5;
+    return shekel;
+}
+function shekelToDollar(coin) {
+    var dollar=coin/3.5;
+    return dollar;
+}
+function euroToShekel(coin) {
+    var shekelEuro=coin*3.8;
+    return shekelEuro;
+}
+function shekelToEuro(coin) {
+    var euro=coin/3.8;
+    return euro;
+}
+
+console.log(dollarToShekel(coin));
+console.log(shekelToDollar(coin));
+console.log(euroToShekel(coin));
+console.log(shekelToEuro(coin));
+
+    </script>
+</body>
+</html>
